@@ -5,7 +5,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.logging.Logger;
 
-import io.github.felipewmartins.enums.Replica;
+import io.github.felipewmartins.enums.ReplicaUtil;
 import io.github.felipewmartins.task.Compute;
 
 /**
@@ -16,7 +16,7 @@ import io.github.felipewmartins.task.Compute;
 
 public abstract class Servidor implements Compute {
   Logger logger = Logger.getLogger("io.github.felipewmartins.replicas");
-  private Replica replica;
+  private ReplicaUtil replica;
 
 
   public void start() {

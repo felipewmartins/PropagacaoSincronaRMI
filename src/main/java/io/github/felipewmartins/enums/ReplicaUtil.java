@@ -1,9 +1,9 @@
 package io.github.felipewmartins.enums;
 
-public enum Replica {
+public enum ReplicaUtil {
   REPLICA1, REPLICA2;
   
-  Replica(){
+  ReplicaUtil(){
     
   }
   
