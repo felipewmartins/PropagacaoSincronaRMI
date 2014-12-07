@@ -6,7 +6,6 @@ import io.github.felipewmartins.task.Task;
 public class ReplicaPrimaria extends Servidor{
 
   public ReplicaPrimaria() {
-    // TODO Auto-generated constructor stub
     super(ReplicaUtil.REPLICA1);
   }
   
