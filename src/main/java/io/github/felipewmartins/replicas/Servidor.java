@@ -17,6 +17,10 @@ import io.github.felipewmartins.task.Compute;
 public abstract class Servidor implements Compute {
   Logger logger = Logger.getLogger("io.github.felipewmartins.replicas");
   private ReplicaUtil replica;
+  
+  public Servidor(ReplicaUtil replicaUtil) {
+    this.replica = replicaUtil;
+  }
 
 
   public void start() {
@@ -28,6 +32,7 @@ public abstract class Servidor implements Compute {
       logger.info("Iniciando Servidor!");
     } catch (Exception e) {
       // TODO: handle exception
+      e.printStackTrace();
     }
 
   }

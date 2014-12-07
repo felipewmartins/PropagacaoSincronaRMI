@@ -20,7 +20,7 @@ public enum FileUtil {
     } catch (Exception e) {
       // TODO: handle exception
     }
-    return null;
+    return sb.toString();
   }
   
   public void write(File file, String text){
