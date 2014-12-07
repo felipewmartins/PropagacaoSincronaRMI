@@ -17,8 +17,12 @@ import io.github.felipewmartins.task.Compute;
 public abstract class Servidor implements Compute {
   Logger logger = Logger.getLogger("io.github.felipewmartins.replicas");
   private ReplicaUtil replica;
+  
 
-
+  public Servidor(ReplicaUtil replicaUtil) {
+    this.replica = replicaUtil;
+  }
+  
   public void start() {
     registrarRMI();
     try {
