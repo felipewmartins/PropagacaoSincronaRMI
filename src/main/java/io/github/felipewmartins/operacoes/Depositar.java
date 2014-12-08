@@ -22,7 +22,6 @@ public class Depositar implements Task<Double>, Serializable {
 
   @Override
   public Double execute() {
-    // TODO Auto-generated method stub
     double novoSaldo = valor;
     String saldo = arquivoPrinc.getProperty(conta);
 
@@ -37,8 +36,8 @@ public class Depositar implements Task<Double>, Serializable {
   }
 
   @Override
-  public void setArquivoPrinc(Properties file) {
-    // TODO Auto-generated method stub
+  public void setArquivoPrinc(Properties arquivoPrinc) {
+    this.arquivoPrinc = arquivoPrinc;
     
   }
 
