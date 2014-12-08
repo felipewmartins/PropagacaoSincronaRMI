@@ -59,7 +59,7 @@ public abstract class Servidor implements Compute {
   public void registrarRMI() {
     try {
       LocateRegistry.createRegistry(replica.getPorta());
-      logger.warning("Registro RMI efetuado!");
+      logger.info("Registro RMI efetuado!");
     } catch (Exception e) {
       // TODO: handle exception
     }
