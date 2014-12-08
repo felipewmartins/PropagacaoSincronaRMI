@@ -1,5 +1,7 @@
 package io.github.felipewmartins.task;
 
+import java.util.Properties;
+
 /**
  * 
  * @author felipe
@@ -8,4 +10,5 @@ package io.github.felipewmartins.task;
  */
 public interface Task<T> {
 	T execute();
+	void setArquivoPrinc(Properties file);
 }

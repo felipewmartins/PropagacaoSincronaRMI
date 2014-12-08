@@ -3,6 +3,7 @@ package io.github.felipewmartins.operacoes;
 import io.github.felipewmartins.task.Task;
 
 import java.io.Serializable;
+import java.util.Properties;
 
 public class Depositar implements Task<Double>, Serializable {
 
@@ -20,6 +21,12 @@ public class Depositar implements Task<Double>, Serializable {
   public Double execute() {
     // TODO Auto-generated method stub
     return null;
+  }
+
+  @Override
+  public void setArquivoPrinc(Properties file) {
+    // TODO Auto-generated method stub
+    
   }
 
 }

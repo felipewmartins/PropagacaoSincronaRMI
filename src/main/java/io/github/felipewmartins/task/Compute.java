@@ -1,6 +1,7 @@
 package io.github.felipewmartins.task;
 
 import java.rmi.Remote;
+import java.rmi.RemoteException;
 
 /**
  * 
@@ -10,5 +11,5 @@ import java.rmi.Remote;
 
 public interface Compute extends Remote {
 
-	<T> T executeTask(Task<T> t); 
+	<T> T executeTask(Task<T> t) throws RemoteException; 
 }

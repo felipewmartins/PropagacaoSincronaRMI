@@ -2,10 +2,12 @@ package io.github.felipewmartins.replicas;
 
 import io.github.felipewmartins.enums.ReplicaUtil;
 import io.github.felipewmartins.task.Compute;
+import io.github.felipewmartins.task.Task;
 import io.github.felipewmartins.util.FileUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
@@ -70,6 +72,12 @@ public abstract class Servidor implements Compute {
     } catch (IOException e) {
       e.printStackTrace();
     }
+  }
+  
+  @Override
+  public <T> T executeTask(Task<T> t) throws RemoteException{
+    
+    return null;
   }
 
 }
