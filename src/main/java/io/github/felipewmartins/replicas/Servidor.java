@@ -6,7 +6,6 @@ import io.github.felipewmartins.task.Task;
 import io.github.felipewmartins.util.FileUtil;
 
 import java.io.File;
-import java.io.FilePermission;
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;

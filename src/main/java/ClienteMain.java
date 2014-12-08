@@ -9,7 +9,7 @@ public class ClienteMain {
 
   public static void main(String[] args) {
     try {
-      Registry registry = LocateRegistry.getRegistry("127.0.0.1",ReplicaUtil.REPLICA1.getPorta());
+      Registry registry = LocateRegistry.getRegistry("localhost",ReplicaUtil.REPLICA1.getPorta());
       Compute bc = (Compute) registry.lookup(ReplicaUtil.REPLICA1.name());
       
       Cliente felipe = new Cliente("Felipe");
