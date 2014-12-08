@@ -32,7 +32,7 @@ public class Depositar implements Task<Double>, Serializable {
     arquivoPrinc.setProperty(conta, String.valueOf(novoSaldo));
     arquivoPrinc.setProperty("ultimaAlteracao" + conta, LocalDateTime.now().toString());
     System.out.printf("Depositado feito de %.2f na conta do(a) %s%n", valor, conta);
-    return null;
+    return novoSaldo;
   }
 
   @Override
